@@ -1,0 +1,30 @@
+/* @@@@@@@@@@@@@@@@@@@ MAIN PICTURE @@@@@@@@@@@@@@@@@@@ */ /* @@@@@@@@@@@@@@@@@@@ MAIN PICTURE @@@@@@@@@@@@@@@@@@@ */
+.main-picture {
+  background-image: url("/utils/img/car-homepage.jpg");
+  min-height: 600px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+@media (max-width: 960px) {
+  /* Handy */
+  .main-picture {
+    background-position: center;
+    min-height: 380px;
+  }
+}
+@media (min-width: 2160px) {
+  .main-picture {
+    min-height: 700px;
+  }
+}
+@media (min-width: 3840px) {
+  /* 4k */
+  .main-picture {
+    min-height: 1200px;
+  }
+}
+
+/*# sourceMappingURL=gallery.css.map */

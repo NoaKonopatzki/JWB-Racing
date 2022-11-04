@@ -1,0 +1,147 @@
+/* @@@@@@@@@@@@@@@@@@@ DEFAULT SETTINGS @@@@@@@@@@@@@@@@@@@ */
+* {
+  font-family: "OpenSans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
+  background-color: #fff;
+  color: #000;
+}
+
+/* @@@@@@@@@@@@@@@@@@@ HEADER SETTINGS @@@@@@@@@@@@@@@@@@@ */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 50px 0 50px;
+  top: 0;
+}
+.header .img {
+  padding: 0 20px 0;
+  width: 5px;
+  height: auto;
+}
+.header .toggle-button {
+  position: absolute;
+  margin: 5px 50px;
+  top: 15px;
+  right: -10px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 1.5rem;
+}
+.header .toggle-button .bar-1, .header .toggle-button .bar-2, .header .toggle-button .bar-3 {
+  height: 4px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.header .toggle-button .bar-1 {
+  transform-origin: 0 0;
+  transition: transform 0.4s ease-in-out;
+}
+.header .toggle-button .bar-2 {
+  transition: transform 0.2s ease-in-out;
+}
+.header .toggle-button .bar-3 {
+  transform-origin: 0 100%;
+  transition: transform 0.4s ease-in-out;
+}
+.header .toggle-button .bar-1.active {
+  transform: rotate(45deg);
+}
+.header .toggle-button .bar-2.active {
+  transform: scaleY(0);
+}
+.header .toggle-button .bar-3.active {
+  transform: rotate(-45deg);
+}
+.header .toggle-button:hover {
+  opacity: 0.8;
+}
+.header .navbar ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.header .navbar ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
+  transition: display 1s;
+}
+.header .navbar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  display: block;
+  font-weight: 520;
+}
+.header .navbar ul li:hover {
+  opacity: 50%;
+}
+
+@media (max-width: 960px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 0;
+  }
+  .header .toggle-button {
+    display: flex;
+  }
+  .header .navbar {
+    display: none;
+    width: 100%;
+  }
+  .header .navbar ul {
+    width: 100%;
+    flex-direction: column;
+    padding: 5px 0 5px 0;
+  }
+  .header .navbar li {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px 40px;
+  }
+  .header .navbar li a {
+    font-size: 25px;
+    color: black !important;
+  }
+  .header .navbar.active {
+    display: flex;
+  }
+}
+/* @@@@@@@@@@@@@@@@@@@ FOOTER SETTINGS @@@@@@@@@@@@@@@@@@@ */
+.footer-gen {
+  display: block;
+  padding: 50px 0;
+}
+.footer-gen .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  bottom: 0;
+  color: #000;
+}
+.footer-gen .footer a {
+  color: #000;
+  text-decoration: none;
+}
+.footer-gen .footer a:hover {
+  opacity: 0.8;
+}
+.footer-gen .footer-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */

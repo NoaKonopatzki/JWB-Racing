@@ -1,0 +1,154 @@
+@import "variables";
+
+
+/* @@@@@@@@@@@@@@@@@@@ DEFAULT SETTINGS @@@@@@@@@@@@@@@@@@@ */
+
+* {
+  font-family: 'OpenSans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  body {
+    background-color: $white-main;
+    color: $black-text;
+  }
+}
+
+/* @@@@@@@@@@@@@@@@@@@ HEADER SETTINGS @@@@@@@@@@@@@@@@@@@ */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 50px 0 50px;
+  top: 0;
+  .img {
+    padding: 0 20px 0;
+    width: 5px;
+    height: auto;
+  }
+  .toggle-button {
+    position: absolute;
+    margin: 5px 50px;
+    top: 15px;
+    right: -10px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 1.5rem;
+    .bar-1, .bar-2, .bar-3 {
+      height: 4px;
+      width: 100%;
+      background-color: #ffffff;
+      border-radius: 10px;
+    }
+    .bar-1 {
+      transform-origin: 0 0;
+      transition: transform 0.4s ease-in-out;
+    }
+    .bar-2 {
+      transition: transform 0.2s ease-in-out;
+    }
+    .bar-3 {
+      transform-origin: 0 100%;
+      transition: transform 0.4s ease-in-out;
+    }
+    .bar-1.active {
+      transform: rotate(45deg);
+    }
+    .bar-2.active {
+      transform: scaleY(0);
+    }
+    .bar-3.active {
+      transform: rotate(-45deg);
+    }
+  }
+  .toggle-button:hover {
+    opacity: 0.8;
+  }
+  .navbar {
+    ul {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        display: inline-block;
+        padding: 20px;
+        transition: display 1s;
+        a {
+          text-decoration: none;
+          color: #ffffff;
+          font-size: 18px;
+          display: block;
+          font-weight: 520;
+        }
+      }
+      li:hover {
+        opacity: 50%;
+      }
+    }
+  }
+
+}
+@media (max-width: 960px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 0;
+    .toggle-button {
+      display: flex;
+    }
+    .navbar {
+      display: none;
+      width: 100%;
+      ul {
+        width: 100%;
+        flex-direction: column;
+        padding: 5px 0 5px 0;
+      }
+      li {
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 15px 40px;
+        a {
+          font-size: 25px;
+          color: black !important;
+        }
+      }
+    }
+    .navbar.active {
+      display: flex;
+    }
+  }
+}
+
+/* @@@@@@@@@@@@@@@@@@@ FOOTER SETTINGS @@@@@@@@@@@@@@@@@@@ */
+
+.footer-gen {
+  display: block;
+  padding: 50px 0;
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    bottom: 0;
+    color: $black-text;
+    a {
+      color: $black-text;
+      text-decoration: none;
+    }
+    a:hover {
+      opacity: 0.8;
+    }
+  }
+  .footer-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

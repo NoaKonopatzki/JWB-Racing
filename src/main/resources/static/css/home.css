@@ -1,0 +1,111 @@
+/* @@@@@@@@@@@@@@@@@@@ MAIN PICTURE @@@@@@@@@@@@@@@@@@@ */ /* @@@@@@@@@@@@@@@@@@@ MAIN PICTURE @@@@@@@@@@@@@@@@@@@ */
+.main-picture {
+  background-image: url("/utils/img/car-homepage.jpg");
+  min-height: 600px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+@media (max-width: 960px) {
+  /* Handy */
+  .main-picture {
+    background-position: center;
+    min-height: 380px;
+  }
+}
+@media (min-width: 2160px) {
+  .main-picture {
+    min-height: 700px;
+  }
+}
+@media (min-width: 3840px) {
+  /* 4k */
+  .main-picture {
+    min-height: 1200px;
+  }
+}
+/* @@@@@@@@@@@@@@@@@@@ SEC 1 @@@@@@@@@@@@@@@@@@@ */
+.sec1 {
+  margin: 30px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: 20px;
+}
+.sec1 h1 {
+  padding: 10px 0;
+}
+.sec1 p {
+  padding: 0 0 10px 0;
+  text-align: justify;
+}
+
+@media (max-width: 1510px) {
+  .sec1 {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 915px) {
+  .sec1 {
+    font-size: 20px;
+  }
+}
+/* @@@@@@@@@@@@@@@@@@@ SEC 2 @@@@@@@@@@@@@@@@@@@ */
+.sec2 {
+  text-align: center;
+  background-color: rgb(0, 0, 81);
+  color: rgb(255, 255, 255);
+  padding: 30px 130px;
+}
+
+.sec2-video {
+  margin: 10px;
+  width: 360px;
+  height: 240px;
+}
+
+@media (max-width: 915px) {
+  .sec2 {
+    padding: 0;
+    margin: 0;
+  }
+  .sec2 h1 {
+    text-align: center;
+    padding: 30px 0 0;
+  }
+  .sec2-video {
+    display: block;
+    margin: auto;
+    padding: 20px 0 0;
+  }
+  .sec2-videos-section {
+    padding: 0 0 30px 0;
+  }
+}
+/* @@@@@@@@@@@@@@@@@@@ ENGIN START @@@@@@@@@@@@@@@@@@@ */
+.start-engin-button {
+  margin: 20px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.start-engin-button a img {
+  width: 200px;
+  height: auto;
+}
+
+@media (max-width: 400px) {
+  .start-engin-button a img {
+    width: 150px;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

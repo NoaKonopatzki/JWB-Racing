@@ -1,0 +1,49 @@
+/* @@@@@@@@@@@@@@@@@@@ MAIN PICTURE @@@@@@@@@@@@@@@@@@@ */
+
+@import "main-picture";
+
+/* @@@@@@@@@@@@@@@@@@@ ARTICLE @@@@@@@@@@@@@@@@@@@ */
+
+.sections {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+
+  .article {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: #ffffff;
+    height: 500px;
+    width: 300px;
+    justify-content: center;
+
+    .article-link {
+      text-decoration: none;
+      color: black;
+
+      .article-content {
+        height: 500px;
+        width: 300px;
+
+        .article-header {
+          display: block;
+          margin: 20px;
+          text-align: center;
+          color: #000000;
+          text-decoration: none;
+        }
+
+        .article-body {
+          margin: 20px 30px;
+          text-align: justify;
+          max-height: 400px;
+          overflow: scroll;
+        }
+      }
+    }
+
+  }
+}

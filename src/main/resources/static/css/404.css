@@ -1,0 +1,23 @@
+/* @@@@@@@@@@@@@@@@@@@ MAIN PICTURE @@@@@@@@@@@@@@@@@@@ */
+.main-picture {
+  background-image: url("/utils/img/404.png");
+  min-height: 600px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+@media (min-width: 2160px) {
+  .main-picture {
+    min-height: 700px;
+  }
+}
+@media (min-width: 3840px) {
+  /* 4k */
+  .main-picture {
+    min-height: 1200px;
+  }
+}
+
+/*# sourceMappingURL=404.css.map */
