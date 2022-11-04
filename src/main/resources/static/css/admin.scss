@@ -1,18 +1,39 @@
-body {
-  background-color: #272727;
-  color: #ffffff;
-}
 
-.sec1 {
-  .title {
-    h1 {
-      text-align: center;
-      font-size: 24px;
+/* @@@@@@@@@@@@@@@@@@@ MAIN SECTION @@@@@@@@@@@@@@@@@@@ */
+
+.sections {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+
+  .sec1 {
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    background-color: #1e1e1e;
+    height: 65px;
+    width: 300px;
+    justify-content: center;
+
+    .sec1-link {
+      text-decoration: none;
+      color: #ffffff;
+
+      .sec1-content {
+        height: 65px;
+        width: 300px;
+
+        .sec1-header {
+          display: block;
+          margin: 20px;
+          text-align: center;
+          color: #ffffff;
+          text-decoration: none;
+        }
+      }
     }
-  }
-}
-.sec2 {
-  .navigation-panel {
 
   }
 }

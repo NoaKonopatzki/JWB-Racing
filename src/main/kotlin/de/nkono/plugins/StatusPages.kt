@@ -5,11 +5,10 @@ import io.ktor.server.application.*
 import io.ktor.server.freemarker.*
 import io.ktor.server.plugins.statuspages.*
 import io.ktor.server.response.*
-import javax.naming.AuthenticationException
 
 fun Application.configureStatusPages() {
     install(StatusPages){
-        status(HttpStatusCode.NotFound) { call, status ->
+        status(HttpStatusCode.NotFound) { call, _ ->
             val pageName = Name("404")
             call.respond(
                 FreeMarkerContent(

@@ -2,21 +2,15 @@
 <@layout.layout>
     <link rel="stylesheet" href="/utils/css/admin.min.css">
 
-    <section class="sec1">
-        <div class="title">
-            <h1>Admin-Panel</h1>
-        </div>
-    </section>
-    <section class="sec2">
-        <div class="navigation-panel">
-            <div class="new-article">
-                <a href="/admin/new">
-                    Create New Article
-                </a>
-            </div>
-            <div class="edit-article">
-                <a href="/ad"></a>
-            </div>
-        </div>
-    </section>
+    <div class="sections">
+        <section class="sec1">
+            <a class="sec1-link" href="/admin/new">
+                <div class="sec1-content">
+                    <h3 class="sec1-header">
+                        Create New Article
+                    </h3>
+                </div>
+            </a>
+        </section>
+    </div>
 </@layout.layout>

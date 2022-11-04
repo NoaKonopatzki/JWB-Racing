@@ -1,0 +1,61 @@
+.sec1 {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.sec1 .title {
+  color: #ffffff;
+  text-align: center;
+}
+.sec1 .form {
+  text-align: center;
+}
+.sec1 .form .title-area {
+  margin-top: 10px;
+  padding: 10px;
+  width: 400px;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #1e1e1e;
+}
+.sec1 .form .text-area {
+  margin-top: 10px;
+  padding: 10px;
+  width: 400px;
+  height: 600px;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #1e1e1e;
+}
+.sec1 .form .submit-button {
+  margin-top: 10px;
+  padding: 10px;
+  width: 400px;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #126b00;
+}
+.sec1 .form .submit-button:hover {
+  opacity: 0.8;
+}
+.sec1 .form .delete-button {
+  margin-top: 10px;
+  padding: 10px;
+  width: 400px;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #5a0000;
+}
+.sec1 .form .delete-button:hover {
+  opacity: 0.8;
+}
+
+/*# sourceMappingURL=new.css.map */

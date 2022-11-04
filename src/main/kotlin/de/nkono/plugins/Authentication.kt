@@ -8,11 +8,10 @@ fun Application.configureAuthentication() {
         basic("auth-admin") {
             realm = "Access to the '/' path"
             validate { credentials ->
-                if (credentials.name == "admin" && credentials.password == "12") { // User Login Data
+                if (credentials.name == "jwb-racing" && credentials.password == "123") // User Login Data
                     UserIdPrincipal(credentials.name)
-                } else {
+                else
                     null
-                }
             }
         }
     }

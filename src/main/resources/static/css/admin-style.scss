@@ -1,0 +1,75 @@
+@import "variables";
+
+
+/* @@@@@@@@@@@@@@@@@@@ DEFAULT SETTINGS @@@@@@@@@@@@@@@@@@@ */
+
+* {
+  font-family: 'OpenSans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  body {
+    background-color: $black-main;
+    color: $white-text;
+  }
+}
+
+/* @@@@@@@@@@@@@@@@@@@ HEADER SETTINGS @@@@@@@@@@@@@@@@@@@ */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 50px 0 50px;
+  top: 0;
+  .img {
+    padding: 0 20px 0;
+    width: 5px;
+    height: auto;
+  }
+  .title {
+    color: $white-text;
+    text-align: center;
+    text-decoration: none;
+  }
+  .title:hover {
+    opacity: 0.8;
+  }
+}
+@media (max-width: 960px) {
+  .header {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 0;
+  }
+}
+
+/* @@@@@@@@@@@@@@@@@@@ FOOTER SETTINGS @@@@@@@@@@@@@@@@@@@ */
+
+.footer-all {
+  display: block;
+  padding: 50px 0;
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    bottom: 0;
+    color: $black-text;
+    a {
+      color: $white-text;
+      text-decoration: none;
+    }
+    a:hover {
+      opacity: 0.8;
+    }
+  }
+  .footer-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

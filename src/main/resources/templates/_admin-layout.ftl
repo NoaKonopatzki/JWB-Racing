@@ -17,7 +17,7 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link rel="stylesheet" href="/utils/css/style.min.css">
+        <link rel="stylesheet" href="/utils/css/admin-style.min.css">
         <!-- CSS -->
 
         <!-- JS -->
@@ -32,19 +32,11 @@
                 <div class="img">
                     <a href="/"><img alt="Logo_JWB-Racing" width="60px" height="auto" src="/utils/img/logo.png"></a>
                 </div>
-                <div class="toggle-button">
-                    <span class="bar-1"></span>
-                    <span class="bar-2"></span>
-                    <span class="bar-3"></span>
+                <div>
+                    <a href="/admin" class="title">
+                        <h1>Admin-Panel</h1>
+                    </a>
                 </div>
-                <nav class="navbar">
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/news">News</a></li>
-                        <li><a href="/gallery">Gallery</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                    </ul>
-                </nav>
             </div>
         </div>
     </header>
@@ -52,7 +44,7 @@
         <#nested>
     </main>
     <footer>
-        <div data-aos="fade-in" data-aos-duration="1500" class="footer-gen">
+        <div data-aos="fade-in" data-aos-duration="1500" class="footer-all">
             <div class="footer">
                 <a href="/imprint">Imprint</a> <!-- Imprint -->
                 <a href="/privacy">Privacy Policy</a> <!-- Privacy -->

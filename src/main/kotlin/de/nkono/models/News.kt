@@ -7,7 +7,6 @@ class News
 private constructor(val id: Int, var title: String, var body: String) {
     companion object {
         private val idCounter = AtomicInteger()
-
         fun newEntry(title: String, body: String) = News(idCounter.getAndIncrement(), title, body)
     }
 }

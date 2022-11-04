@@ -1,0 +1,71 @@
+/* @@@@@@@@@@@@@@@@@@@ DEFAULT SETTINGS @@@@@@@@@@@@@@@@@@@ */
+* {
+  font-family: "OpenSans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
+  background-color: #000;
+  color: #fff;
+}
+
+/* @@@@@@@@@@@@@@@@@@@ HEADER SETTINGS @@@@@@@@@@@@@@@@@@@ */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 50px 0 50px;
+  top: 0;
+}
+.header .img {
+  padding: 0 20px 0;
+  width: 5px;
+  height: auto;
+}
+.header .title {
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+.header .title:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 960px) {
+  .header {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 0;
+  }
+}
+/* @@@@@@@@@@@@@@@@@@@ FOOTER SETTINGS @@@@@@@@@@@@@@@@@@@ */
+.footer-all {
+  display: block;
+  padding: 50px 0;
+}
+.footer-all .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  bottom: 0;
+  color: #000;
+}
+.footer-all .footer a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-all .footer a:hover {
+  opacity: 0.8;
+}
+.footer-all .footer-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=admin-style.css.map */

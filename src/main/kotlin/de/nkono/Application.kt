@@ -7,7 +7,6 @@ import de.nkono.plugins.*
 fun main() {
     embeddedServer(Netty, port = 8080, host = "localhost") {
 
-
         //Load Routing
         configureRouting()
 

@@ -35,7 +35,12 @@ fun Application.configureRouting() {
                     val pageName = Name("News")
                     // Show a page with fields for editing an article
                     val id = call.parameters.getOrFail<Int>("id").toInt()
-                    call.respond(FreeMarkerContent("pages/news/edit.ftl", mapOf("news" to news.find { it.id == id }, "pageName" to pageName)))
+                    call.respond(
+                        FreeMarkerContent(
+                            "pages/news/edit.ftl",
+                            mapOf("news" to news.find { it.id == id }, "pageName" to pageName)
+                        )
+                    )
                 }
             }
         }
@@ -68,7 +73,12 @@ fun Application.configureRouting() {
                 val pageName = Name("News")
                 // Show an article with a specific id
                 val id = call.parameters.getOrFail<Int>("id").toInt()
-                call.respond(FreeMarkerContent("pages/news/show.ftl", mapOf("news" to news.find { it.id == id }, "pageName" to pageName)))
+                call.respond(
+                    FreeMarkerContent(
+                        "pages/news/show.ftl",
+                        mapOf("news" to news.find { it.id == id }, "pageName" to pageName)
+                    )
+                )
             }
             post("{id}") {
                 // Update or delete an article
