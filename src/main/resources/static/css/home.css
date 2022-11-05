@@ -38,8 +38,12 @@
 .sec1 h1 {
   padding: 10px 0;
 }
-.sec1 p {
+.sec1 .sec1-text {
   padding: 0 0 10px 0;
+  text-align: justify;
+  width: 800px;
+}
+.sec1 .sec1-text p {
   text-align: justify;
 }
 
@@ -50,6 +54,14 @@
     align-items: center;
     font-size: 20px;
     text-align: center;
+  }
+  .sec1 .sec1-text {
+    padding: 0 0 10px 0;
+    text-align: justify;
+    width: 100%;
+  }
+  .sec1 .sec1-text p {
+    text-align: justify;
   }
 }
 @media (max-width: 915px) {

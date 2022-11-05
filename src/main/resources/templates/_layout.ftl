@@ -26,6 +26,10 @@
 
 </head>
 <body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 <header>
     <div data-aos="slide-down" data-aos-duration="1500" class="main-picture">
         <div class="header">
@@ -63,10 +67,6 @@
         </div>
     </div>
 </footer>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
 </body>
 
 </#macro>

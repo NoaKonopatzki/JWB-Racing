@@ -5,14 +5,15 @@ val postgresql_version: String by project
 val exposed_version: String by project
 val h2_version: String by project
 
+group = "de.nkono"
+version = "0.0.1"
+
 plugins {
     application
     kotlin("jvm") version "1.7.20"
-    id("io.ktor.plugin") version "2.1.2"
+    id("io.ktor.plugin") version "2.1.3"
 }
 
-group = "de.nkono"
-version = "0.0.1"
 application {
     mainClass.set("de.nkono.ApplicationKt")
 
@@ -41,4 +42,26 @@ dependencies {
     implementation("io.ktor:ktor-network-tls-certificates:$ktor_version")
     testImplementation("io.ktor:ktor-server-tests-jvm:$ktor_version")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
+}
+
+ktor {
+    docker {
+        jreVersion.set(io.ktor.plugin.features.JreVersion.JRE_17)
+        localImageName.set("jwb-racing-docker-image")
+        imageTag.set("0.0.1")
+        portMappings.set(listOf(
+            io.ktor.plugin.features.DockerPortMapping(
+                80,
+                8080,
+                io.ktor.plugin.features.DockerPortMappingProtocol.TCP
+            )
+        ))
+        externalRegistry.set(
+            io.ktor.plugin.features.DockerImageRegistry.dockerHub(
+                appName = provider { "ktor-app" },
+                username = providers.environmentVariable("DOCKER_HUB_USERNAME"),
+                password = providers.environmentVariable("DOCKER_HUB_PASSWORD")
+            )
+        )
+    }
 }

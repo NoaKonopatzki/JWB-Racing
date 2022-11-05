@@ -42,6 +42,17 @@ fun Application.configureRouting() {
                         )
                     )
                 }
+                get("/upload") {
+                    val pageName = Name("Gallery")
+
+                    call.respond(
+                        FreeMarkerContent(
+                            "pages/gallery.ftl",
+                            mapOf("pageName" to pageName),
+                            contentType = ContentType.Text.Html
+                        )
+                    )
+                }
             }
         }
         get {
@@ -85,7 +96,7 @@ fun Application.configureRouting() {
                 val id = call.parameters.getOrFail<Int>("id").toInt()
                 val formParameters = call.receiveParameters()
                 when (formParameters.getOrFail("_action")) {
-                    "update" -> {
+                    "Update" -> {
                         val index = news.indexOf(news.find { it.id == id })
                         val title = formParameters.getOrFail("title")
                         val body = formParameters.getOrFail("body")
@@ -94,22 +105,24 @@ fun Application.configureRouting() {
                         call.respondRedirect("/news/$id")
                     }
 
-                    "delete" -> {
+                    "Delete" -> {
                         news.removeIf { it.id == id }
                         call.respondRedirect("/news")
                     }
                 }
             }
         }
-        get("/gallery") {
-            val pageName = Name("Gallery")
-            call.respond(
-                FreeMarkerContent(
-                    "pages/gallery.ftl",
-                    mapOf("pageName" to pageName),
-                    contentType = ContentType.Text.Html
+        route("/gallery") {
+            get {
+                val pageName = Name("Gallery")
+                call.respond(
+                    FreeMarkerContent(
+                        "pages/gallery.ftl",
+                        mapOf("pageName" to pageName),
+                        contentType = ContentType.Text.Html
+                    )
                 )
-            )
+            }
         }
         get("/contact") {
             val pageName = Name("Contact")

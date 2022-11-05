@@ -15,5 +15,4 @@ fun Application.configureAuthentication() {
             }
         }
     }
-
 }

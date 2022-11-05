@@ -16,9 +16,13 @@
     padding: 10px 0;
   }
 
-  p {
+  .sec1-text {
     padding: 0 0 10px 0;
     text-align: justify;
+    width: 800px;
+    p {
+      text-align: justify;
+    }
   }
 }
 
@@ -29,6 +33,14 @@
     align-items: center;
     font-size: 20px;
     text-align: center;
+    .sec1-text {
+      padding: 0 0 10px 0;
+      text-align: justify;
+      width: 100%;
+      p {
+        text-align: justify;
+      }
+    }
   }
 }
 

@@ -5,9 +5,9 @@
 /* @@@@@@@@@@@@@@@@@@@ ARTICLE @@@@@@@@@@@@@@@@@@@ */
 
 .sections {
-  margin-top: 20px;
+  margin: 20px 20px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 70px;
@@ -19,6 +19,8 @@
     height: 500px;
     width: 300px;
     justify-content: center;
+    display: flex;
+    align-items: center;
 
     .article-link {
       text-decoration: none;
